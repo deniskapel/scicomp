@@ -90,21 +90,21 @@ X0=1, thus X = 1011
 
 ### Exercise: Convert these powers of 2 into binary: 2, 4, 8, 16, 32. What do you notice?
 
-2 = 10
-4 = 100
-8 = 1000
-16 = 10000
-32 = 100000
+* 2 = 10
+* 4 = 100
+* 8 = 1000
+* 16 = 10000
+* 32 = 100000
 
 There is an extra bit with every other power
 
 ### Exercise: Convert these numbers into binary: 1, 3, 7, 15, 31 (they are all 2^n - 1 for some n). What do you notice?
 
-1 = 1
-3 = 11
-7 = 111
-15 = 1111
-31 = 11111
+* 1 = 1
+* 3 = 11
+* 7 = 111
+* 15 = 1111
+* 31 = 11111
 
 All these numbers are one bit smaller than their respective powers. By incrementing a decimal by 1, we cause overflow into the next digit.
 
