@@ -44,7 +44,7 @@ X | Y |NOT(X)|NAND(1,X)|AND(X,Y)|NOT(NAND(X,Y))|OR(X,Y)|NAND(NOT(X),NOT(Y)))|
 --|---|------|---------|--------|--------------|-------|--------------------|
 0 | 0 |   1  |     1   |    0   |       0      |    0  |        0           |
 1 | 0 |   0  |     0   |    0   |       0      |    1  |        1           |
-0 | 1 |   0  |     0   |    0   |       0      |    1  |        1           |
+0 | 1 |   1  |     1   |    0   |       0      |    1  |        1           |
 1 | 1 |   0  |     0   |    1   |       1      |    1  |        1           |
 
 ### Exercise: write similar formulas expressing NOT, AND, and OR in terms of NOR
