@@ -96,7 +96,7 @@ X0=1, thus X = 1011
 * 16 = 10000
 * 32 = 100000
 
-There is an extra bit with every other power
+There is an extra bit with every power
 
 ### Exercise: Convert these numbers into binary: 1, 3, 7, 15, 31 (they are all 2^n - 1 for some n). What do you notice?
 
