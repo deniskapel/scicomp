@@ -78,13 +78,6 @@ In order to use other operators, we first need to define them, so only AND is av
 
 ### Exercise: Convert X = 110 to decimal.
 
-X2 | X1 | X0
----|----|----
-1  | 1  |  0
-^    ^     ^--------- times 2^0 = 1
-|    |--------------- times 2^1 = 2
-|-------------------- times 2^2 = 4
-
   1 * 2^2 + 1 * 2^1 + 0 * 2^0
 = 1 * 4   + 1 * 2   + 0 * 1
 =   4     +   2     +   0
