@@ -2,6 +2,9 @@
 
 ### Exercise: show that every IPv4 can be represented by four 8bit unsigned integers, and that every 8bit unsigned integer is between 0 and 255.
 
+IPv4 uses a 32-bit address space or 2^32. We can split it into 2^8 * 2^8 * 2^8 * 2^8. 8bit unsigned integers are between 00000000 (which is 0) and 11111111 (which is 255).
+
+
 ### Exercise: how many IPv4 addresses are there? Is it enough? Explain.
 
 IPv4 addresses have the size of 2^32, so it limits the address space to 4294967296 addresses. It is enough as long as we do not need more unique identifiers (subnets can provide some extension). The IoT growth is one of the reason to expand the limit, e.g. with the use of IPv6.
@@ -30,10 +33,11 @@ PING sports.ru (37.209.240.8) 56(84) bytes of data.
 rtt min/avg/max/mdev = 4.736/5.479/6.577/0.679 ms
 
 
+## Bandwidth, latency, reliability
+
 ### Exercise: The Multipath TCP project aims to allow TCP packets to be split across multiple network links and reassembled at the destination. For example, if you were uploading a 100 megabyte file to a server from your phone, it would allow you to send 75 megabytes by WiFi and 25 megabytes by cellular automatically. How should the ratio be chosen if you want to minimise transmission time? Minimise cellular bandwidth use? Explain.
 
 The ratio should be based on the ratio between WiFi bandwidth and cellular bandwidth in order to keep up with the number of TCP rounds that cellular path can complete before WiFi path does if they start simultaneously.
-
 
 ### Exercise: UDP is popular for streaming media; explain why.
 
