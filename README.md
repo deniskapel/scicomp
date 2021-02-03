@@ -3,7 +3,7 @@
 This is the repository with practicals and assignments
 
 Here are the links to practicals:
-1. [Computer architecture I]()
+1. [Computer architecture I](https://github.com/deniskapel/scicomp/tree/main/Practical_1)
 2. Data representation I
 3. Interfaces I
 4. Collaboration I
