@@ -6,6 +6,7 @@
 | x[0] | next | --->-- | x[1] | next | --->-- | x[2] | NULL |
 ---------------        ---------------        ---------------
 
+
 ---------------        ---------------
 | x[0] | next | --->-- | x[2] | NULL |
 ---------------        ---------------
@@ -13,6 +14,7 @@
               ---------------
                | x[1] | next |
               ---------------
+
 
 ---------------        ---------------
 | x[0] | next | --->-- | x[2] | NULL |
@@ -22,6 +24,9 @@
              | x[1] | next |
             ---------------
 
+
+
+## Trees
 
 ### Exercise: assemble the numbers 1-10 into binary search trees which are
 
@@ -68,6 +73,8 @@
                         \
                          10
 
+
+## Graphs
 
 ### Exercise: assemble a directed acyclic graph with the numbers 1-12 by strict divisibility: an edge from A to B if B/A is prime. There are no directed cycles, but some nodes do have multiple paths to them. (These form cycles if you ignore the direction.) Which ones? Explain how to decide if a number will have multiple paths to it.
 
