@@ -50,8 +50,8 @@
          /
         2
        /
-      1
-     /
+       1
+
     
     
     
@@ -102,5 +102,5 @@
 
 ### Exercise: model acquaintance using a graph (vertices are people, an edge between A and B means A knows B). Model it with a directed graph. How are these different?
 
-The previous graph allowed only oneway edges, and this one acquaintance assumes
+The previous graph allowed only oneway edges, and acquaintance assumes
 that A and B can know each other, thus cycles are possible.
