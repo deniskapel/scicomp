@@ -2,7 +2,7 @@
 
 ### Exercise: this doesn't mean the file was transferred correctly; why not?
 
-he pieces can get scrambled.
+The pieces can get scrambled.
 
 ### Exercise: do the same for files with "cat" and "cat2" instead of "hi" and "hi2"
 
