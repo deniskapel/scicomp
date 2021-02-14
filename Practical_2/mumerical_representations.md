@@ -23,6 +23,8 @@ binary | hexadecimal |
 1111   | F  |
 
 
+## Floating point numbers
+
 ### Exercise: Pretend we use a naïve floating-point format with 5bit mantissa and 3bit exponent (base-2).
 
 * The smallest possible positive number representable is [00001][111] 0.0001
