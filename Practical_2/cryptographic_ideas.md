@@ -25,6 +25,8 @@ $ b2sum testfile testfile2 # blake2
 48d92c152ff4c58a948d75f7aaba6ccaf00f8f9beb78e3399fe0f325e758af657c07eb2d83a753f3fe16074b149f46390abce8673c7477f75aae99427c9defa7 *testfile2
 
 
+## Symmetric cryptography
+
 ### Exercise: implement the Caesar cipher in python, which advances each letter of 'M' by 'SEC = n': enc(1, "a") = "b", etc.
 
-see [caesar.py](ceasar.py)
+see [caesar.py](https://github.com/deniskapel/scicomp/blob/main/Practical_2/caesar.py)
