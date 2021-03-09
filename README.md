@@ -3,9 +3,9 @@
 This is the repository with practicals and assignments
 
 Here are the links to practicals:
-1. [Computer architecture I](https://github.com/deniskapel/scicomp/tree/main/Practical_1)
-2. [Data representation I](https://github.com/deniskapel/scicomp/tree/main/Practical_2)
-3. Interfaces I
+1. [Computer architecture I](Practical_1/)
+2. [Data representation I](Practical_2/)
+3. [Interfaces I](Practical_3/)
 4. Collaboration I
 5. Licensing
 6. Software design patterns
