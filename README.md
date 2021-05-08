@@ -6,8 +6,8 @@ Here are the links to practicals:
 1. [Computer architecture I](Practical_1/)
 2. [Data representation I](Practical_2/)
 3. [Interfaces I](Practical_3/)
-4. Collaboration I
-5. Licensing
+4. [Collaboration I](Practical_4/)
+5. [Licensing](Practical_5/)
 6. Software design patterns
 7. Review
 8. Software creation I
