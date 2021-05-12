@@ -8,7 +8,7 @@ Here are the links to practicals:
 3. [Interfaces I](Practical_3/)
 4. [Collaboration I](Practical_4/)
 5. [Licensing](Practical_5/)
-6. Software design patterns
+6. [Software design patterns](Practical_6)
 7. Review
 8. Software creation I
 9. Software packaging I

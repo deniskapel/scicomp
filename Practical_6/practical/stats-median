@@ -1,0 +1,14 @@
+#!/usr/bin/python3
+
+"""
+    Write a python program stats-sum which reads a newline-separated
+    list of floating-point numbers from standard input. 
+    When it reaches the end of standard input, it prints the sum, and exits.
+"""
+
+import sys
+from statistics import median
+
+print(
+    median([float(line) for line in sys.stdin])
+)
