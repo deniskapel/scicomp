@@ -37,3 +37,32 @@ Replace `inputs = line.strip().split('\t')` with `inputs = [x if x else "0" for 
 ### Exercise: Explain how you might change the design to permit more than one aggregation of a single column. How would you communicate this to stats with arguments? What logic needs to be changed in stats? Do you need to change the aggregator programs at all?
 
 paste <(seq 1 10) <(seq 1 10) <(seq 1 10) | ./stats bundle mean median variance
+
+### Exercise: Explain how you might change the design to permit more than one aggregation of a single column. How would you communicate this to stats with arguments? What logic needs to be changed in stats? Do you need to change the aggregator programs at all?
+
+One of the agruments has to specify if a single aggregation or a bundle of them has to be applied. e.g.
+
+```
+    paste <(seq 1 10) | ./stats1 all mean median variance
+```
+
+or
+
+```
+    paste <(seq 1 10) <(seq 1 10) <(seq 1 10) | ./stats1 single mean median variance
+```
+
+The first argument would indicate 
+
+It is not necessary to update aggregator programs, as they can run in parallel on the same data, e.g. additional subprocess
+
+Exercise: Explain how you might change the design to permit two-column aggregators, for example, integration. How would you communicate this to stats with arguments? What logic needs to be changed in stats?
+
+stdin is split by tabs. To permit two column aggregators, the split has to go reflect this, e.g. no split at all if there are two-column input or split by 2 if the input is Nx2-column
+
+Exercise: Choose one of these two design changes, and implement it. If you choose the two-column aggregators: the formula for integral is the sum of the expression (after the data 
+is sorted by the first column)
+
+Design change 1:
+
+[.stats1](stats1) - an additional parameter specifies if all aggregators have to apply to the first (only, others are skipped) column or each to a separate one.

@@ -1,0 +1,42 @@
+#!/usr/bin/python3
+
+import subprocess
+import sys
+
+processes = []
+
+if sys.argv[1] not in ['all', 'single']:
+    sys.stderr.write('Indicate the mode as the first arg: all or single\n')
+    sys.exit()
+elif sys.argv[1] == 'all':
+    n_stats = len(sys.argv[2:])
+else:
+    n_stats = 1
+
+for statistic in sys.argv[2:]:
+    processes.append(
+        subprocess.Popen(
+            "./stats-%s" % (statistic),
+            stdin=subprocess.PIPE,
+            stdout=subprocess.PIPE))
+
+for line in sys.stdin:
+    # empty column = zero
+    inputs = [x if x else "0" for x in line.strip().split('\t')]
+
+    if n_stats == 1 and len(inputs) != len(sys.argv[2:]):
+        sys.stderr.write(
+            'Provide each function with a column to compute\n')
+        break
+
+    for x, process in zip(inputs*n_stats, processes):
+        process.stdin.write("{}\n".format(x).encode('utf-8'))
+
+[process.stdin.close() for process in processes]
+
+# read the binary result, and decode
+outputs = [process.stdout.read().decode('utf-8') for process in processes]
+# format the ouput
+outputs = [x.strip() for x in outputs]
+
+print("\t".join(outputs), end="")
